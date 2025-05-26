@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+<title>MoveFit</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://vlibras.gov.br/app/vlibras-plugin.js" ></script>
+
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app')
+    </script>
+    
+</head>
+<body id="logo">
+<header>
+  <div class="container">
+    <nav aria-label="Menu principal">
+      <a href="#logo" class="logo" aria-label="Logo MoveFit Academia">MoveFit</a>
+      <ul>
+        <li><a href="#about" data-key="menu_about">Sobre</a></li>
+        <li><a href="#classes" data-key="menu_classes">Aulas</a></li>
+        <li><a href="#plans" data-key="menu_plans">Planos</a></li>
+        <li><a href="#testimonials" data-key="menu_testimonials">Depoimentos</a></li>
+        <li><a href="#contact" data-key="menu_contact">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <button class="translate-btn" id="btn-translate" aria-label="Translate page">English</button>
+
+<main>
+  <section class="hero" role="banner" aria-label="Chamada principal da MoveFit Academia">
+    <div class="hero-content">
+      <h1 data-key="hero_h1">Transforme seu Corpo. Transforme sua Vida.</h1>
+      <p data-key="hero_p">Treine com os melhores profissionais e alcance seus objetivos com a MoveFit.</p>
+      <a href="#plans" class="btn" role="button" data-key="hero_btn">Veja nossos planos</a>
+    </div>
+  </section>
+  <h6 class="desc-img">Homem fazendo exercício na academia.</h6>
+
+
+  <section id="about" class="about" aria-labelledby="about-title">
+    <h2 id="about-title" data-key="about_title">Sobre a Academia</h2>
+    <p data-key="about_p">Na MoveFit academia, acreditamos que a saúde e o bem-estar são para todos. Contamos com uma estrutura moderna, equipamentos de última geração e uma equipe preparada para te ajudar a alcançar sua melhor versão.</p>
+  </section>
+
+  <section id="classes" class="classes" aria-labelledby="classes-title">
+    <h2 id="classes-title" data-key="classes_title">Nossas Aulas</h2>
+    <div class="classes-list">
+      <article class="class-item" tabindex="0">
+        <img src="https://lh4.googleusercontent.com/proxy/mBaxslaUJ6dz-0_77dsUBTxgBylC1cc-Jqch6HZdA-c-yzVDdx8cx6aOvte9wuM97BilYTnayiZv0qFGqz3zWL1qM3wVSFos-bQfMFDKPrrCbIXp9zLbSQ">
+        <h6 class="desc-imgs">Homem fazendo musculação</h6>
+        <h3 data-key="class1_title">Musculação</h3>
+        <p data-key="class1_desc">Treinos personalizados com acompanhamento profissional para hipertrofia e condicionamento.</p>
+      </article>
+      <article class="class-item" tabindex="0">
+        <img src="https://thumbor.novaescola.org.br/mu0vbVhGLLaEKLSCbbUbKHpuFI8=/nova-escola-producao.s3.amazonaws.com/QSEbFKcz9WHyzWGfa4TgJ9Y3T5TmEBFFeQFCHpGd55h5NXTX8C8HVG3AMYRu/grupo-pratica-yoga-getty-images.jpg">
+        <h6 class="desc-imgs">Pessoas praticando yoga</h6>
+        <h3 data-key="class2_title">Yoga</h3>
+        <p data-key="class2_desc">Aulas para melhorar a flexibilidade, equilíbrio e a saúde mental.</p>
+      </article>
+      <article class="class-item" tabindex="0">
+        <img src="https://s2-ge.glbimg.com/UsOBrfaMovD1MqEwqTDvi3cBTBs=/0x0:2048x1464/984x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2017/11/09/istock-531695662.jpg">
+        <h6 class="desc-imgs">Pessoas praticando exercícios</h6>
+        <h3 data-key="class3_title">HIIT</h3>
+        <p data-key="class3_desc">Treinamento Intervalado de Alta Intensidade para queima rápida de gordura.</p>
+      </article>
+      <article class="class-item" tabindex="0">
+        <img src="https://www.fundesporte.ms.gov.br/wp-content/uploads/2015/05/80614561_5.jpg">
+        <h6 class="desc-imgs">Mulheres dançando</h6>
+        <h3 data-key="class4_title">Dança</h3>
+        <p data-key="class4_desc">Aulas animadas para aumentar sua resistência e se divertir.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="plans" class="plans" aria-labelledby="plans-title">
+    <h2 id="plans-title" data-key="plans_title">Planos & Valores</h2>
+    <div class="plans-list">
+      <article class="plan" tabindex="0" aria-label="Plano Básico">
+        <h3 data-key="plan_basic_title">Básico</h3>
+        <p class="price" data-key="plan_basic_price">R$ 99,90/mês</p>
+        <ul>
+          <li data-key="plan_basic_item1">Acesso livre à academia</li>
+          <li data-key="plan_basic_item2">1 sessão de avaliação física</li>
+          <li data-key="plan_basic_item3">Suporte3 online</li>
+        </ul>
+        <button data-key="plan_basic_btn">Assine Agora</button>
+      </article>
+      <article class="plan" tabindex="0" aria-label="Plano Premium">
+        <h3 data-key="plan_premium_title">Premium</h3>
+        <p class="price" data-key="plan_premium_price">R$ 149,90/mês</p>
+        <ul>
+          <li data-key="plan_premium_item1">Todos os benefícios do Básico</li>
+          <li data-key="plan_premium_item2">Aulas ilimitadas</li>
+          <li data-key="plan_premium_item3">Personal trainer incluso</li>
+        </ul>
+        <button data-key="plan_premium_btn">Assine Agora</button>
+      </article>
+      <article class="plan" tabindex="0" aria-label="Plano Vip">
+        <h3 data-key="plan_vip_title">VIP</h3>
+        <p class="price" data-key="plan_vip_price">R$ 219,90/mês</p>
+        <ul>
+          <li data-key="plan_vip_item1">Acesso 24h</li>
+          <li data-key="plan_vip_item2">Nutricionista e fisioterapia</li>
+          <li data-key="plan_vip_item3">Eventos exclusivos</li>
+        </ul>
+        <button data-key="plan_vip_btn">Assine Agora</button>
+      </article>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials" aria-labelledby="testimonials-title">
+    <h2 id="testimonials-title" data-key="testimonials_title">Depoimentos</h2>
+    <div class="testimonials-list">
+      <blockquote class="testimonial" tabindex="0">
+        <p data-key="testi1_quote">"A MoveFit mudou minha vida! Os profissionais são incríveis e o ambiente é motivador."</p>
+        <cite data-key="testi1_author">- Mariana Silva</cite>
+      </blockquote>
+      <blockquote class="testimonial" tabindex="0">
+        <p data-key="testi2_quote">"Treinos personalizados e acompanhamento que realmente funcionam. Recomendo 100%."</p>
+        <cite data-key="testi2_author">- Carlos Eduardo</cite>
+      </blockquote>
+      <blockquote class="testimonial" tabindex="0">
+        <p data-key="testi3_quote">"A academia tem equipamentos de última geração e a energia do lugar é sensacional."</p>
+        <cite data-key="testi3_author">- Fernanda Costa</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title" data-key="contact_title">Contato</h2>
+    <form aria-label="Formulário de contato da academia" onsubmit="event.preventDefault(); alert('Mensagem enviada! Obrigado pelo contato.'); this.reset();">
+      <label for="name" data-key="contact_label_name">Nome</label>
+      <input id="name" name="name" type="text" required placeholder="Seu nome" aria-required="true" />
+
+      <label for="email" data-key="contact_label_email">E-mail</label>
+      <input id="email" name="email" type="email" required placeholder="seu@email.com" aria-required="true" />
+
+      <label for="message" data-key="contact_label_message">Mensagem</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Digite sua mensagem" aria-required="true"></textarea>
+
+      <button type="submit" data-key="contact_btn_submit">Enviar</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p data-key="footer_text">© 2024 MoveFit Academia - Todos os direitos reservados</p>
+</footer>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+
+</body>
+</html>

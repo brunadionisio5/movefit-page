@@ -1,0 +1,361 @@
+html, body {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align:center;
+    margin-bottom:1.5rem;
+}
+
+input, textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(99, 99, 99, 0.2);
+    padding: 10px;
+}
+
+button {
+    background:#005bbb;
+    color:white; 
+    border:none; 
+    padding:0.75rem; 
+    font-weight:600; 
+    border-radius: 30px; 
+    cursor:pointer; 
+    transition: background-color 0.3s ease;
+}
+
+a {
+    color: #005bbb;
+    text-decoration: none;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #005bbb;
+}
+
+.logo:hover {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    font-weight: 600;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #00b4ff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a:focus::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #00b4ff;
+    outline: none;
+}
+
+
+main {
+    margin-top: 2rem;
+}
+
+form {
+    max-width:400px;
+    margin: 0 auto; 
+    display:flex; 
+    flex-direction: column; 
+    gap:1rem;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center center/cover no-repeat;
+    color: #fff;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(34, 34, 34, 0.6);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+.hero-content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.hero-content a.btn {
+    background-color: #005bbb;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.hero-content a.btn:hover {
+    background-color: #003366;
+}
+
+section {
+    padding: 3rem 1rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+    letter-spacing: 1.5px;
+}
+
+.about, .classes, .plans, .testimonials {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.classes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+.class-item {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+.class-item:hover {
+    transform: translateY(-6px);
+}
+.class-item h3 {
+    color: #005bbb;
+    margin-bottom: 0.6rem;
+    font-size: 1.3rem;
+}
+.class-item p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.plans-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.plan {
+    background: linear-gradient(135deg, #005bbb 0%, #003366 100%);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 7px 20px rgba(0, 72, 153, 0.5);
+    padding: 2rem;
+    max-width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.plan:hover {
+    transform: translateY(-8px);
+}
+.plan h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.plan p.price {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+.plan ul {
+    list-style: none;
+    margin-bottom: 1.6rem;
+}
+.plan ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+.plan button {
+    background-color: #fff;
+    color: #005bbb;
+    border: none;
+    font-weight: 700;
+    padding: 0.65rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.plan button:hover {
+    background-color: #cce0ff;
+}
+
+.testimonials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    padding: 1rem 1.5rem;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    font-style: italic;
+}
+.testimonial p {
+    font-size: 1rem;
+    color: #333;
+}
+.testimonial cite {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 700;
+    text-align: right;
+    color: #005bbb;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.translate-btn {
+    position: fixed;
+    bottom: 20px;
+    border: none;
+    background-color: #005bbb;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.translate-btn {
+    left: 20px;
+}
+
+.daltonism-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 155px;
+    border: none;
+    background-color: #005bbb;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
